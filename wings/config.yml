@@ -1,2 +1,18 @@
-# Reemplaza este archivo con el config.yml que descargas desde Panel -> Nodes -> <tu nodo> -> Configuration.
-# No funcionará con este placeholder.
+debug: false
+uuid: 53b16cf8-a606-45ee-ae21-feaa8d86ed86
+token_id: kZUYPQys4f7TFogd
+token: sBuNW0Dgp7HoxVVh4aMhBwZKXsCoNpXOfUuDfmKeoAXEhgitrbvO1WZW3ozqv4oW
+api:
+  host: 0.0.0.0
+  port: 8081
+  ssl:
+    enabled: false
+    cert: /etc/letsencrypt/live/40.233.4.49/fullchain.pem
+    key: /etc/letsencrypt/live/40.233.4.49/privkey.pem
+  upload_limit: 100
+system:
+  data: /var/lib/pterodactyl/volumes
+  sftp:
+    bind_port: 2022
+allowed_mounts: []
+remote: 'http://40.233.4.49:8080'
