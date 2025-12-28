@@ -15,6 +15,7 @@ services:
     restart: always
   php-fpm:
     image: yoshiwalsh/pterodactyl-panel:v1.11.10
+    platform: linux/amd64
     restart: always
     depends_on:
       - database
@@ -30,11 +31,12 @@ services:
       DB_PASSWORD: ptero123
   nginx:
     image: yoshiwalsh/nginx-for-php-fpm
+    platform: linux/amd64
     restart: always
     depends_on:
       - php-fpm
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - public:/var/www/html/
 
