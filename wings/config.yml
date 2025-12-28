@@ -24,8 +24,8 @@ docker:
     mode: manual
     mtu: 1500
     ipv4:
-      subnet: 10.254.0.0/16
-      gateway: 10.254.0.1
+      subnet: 10.200.0.0/16
+      gateway: 10.200.0.1
     ipv6:
       enabled: false
   registries: {}

@@ -47,6 +47,7 @@ services:
     environment:
       WINGS_CONFIG_FILE: /etc/pterodactyl/config.yml
       DOCKER_API_VERSION: "1.44"
+      TZ: UTC
     ports:
       - 8081:8080   # API de Wings (ajusta al puerto que pongas en el nodo)
       - 2022:2022   # SFTP
