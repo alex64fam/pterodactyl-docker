@@ -16,3 +16,17 @@ system:
     bind_port: 2022
 allowed_mounts: []
 remote: 'http://40.233.4.49:8080'
+docker:
+  network:
+    name: pterodactyl0
+    interface: pterodactyl0
+    driver: bridge
+    mode: manual
+    mtu: 1500
+    ipv4:
+      subnet: 172.31.0.0/16
+      gateway: 172.31.0.1
+    ipv6:
+      enabled: false
+  registries: []
+  update_images: true
